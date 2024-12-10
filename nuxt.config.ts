@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: "2024-12-10",
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxthq/studio'],
+
+  modules: ["@nuxt/content", "@nuxthq/studio", "nuxt-icons"],
 
   routeRules: {
-    '/': { prerender: true }
+    "/": { prerender: true },
   },
 
   // Auto import components
@@ -34,5 +36,17 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2024-12-10'
-})
+  // nuxt content config
+  content: {
+    markdown: {
+      anchorLinks: false,
+    },
+  },
+
+  hooks: {
+    "components:extend": (components) => {
+      const global = components.filter((c) => ["AppButton"].includes(c.pascalName));
+      global.forEach((c) => (c.global = true));
+    },
+  },
+});

@@ -81,7 +81,7 @@
   }
   h2,
   .h2 {
-    @apply mb-2 mt-0 font-main text-4xl font-medium text-headings-h2 lg:mb-4 lg:text-5xl xl:text-7xl;
+    @apply mb-2 mt-0 font-main text-4xl font-medium text-headings-h2 lg:mb-4 lg:text-5xl xl:text-6xl;
   }
   h3,
   .h3 {
@@ -127,5 +127,9 @@
   /* Focus style */
   .focus-style {
     @apply focus:border-none focus:outline-2 focus:outline-offset-2 focus:outline-btn-primary-focus focus:ring-0 focus-visible:border-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-btn-primary-focus focus-visible:ring-0;
+  }
+
+  .text-editor {
+    @apply prose-h1:h1 prose-h2:h2 prose-h3:h3 prose-h4:h4 prose-h5:h5 prose-h6:h6 prose max-w-none prose-p:text-md prose-li:text-md prose-img:m-0 prose-video:m-0 lg:prose-p:text-lg lg:prose-li:text-lg;
   }
 }
