@@ -3,10 +3,10 @@
 Demonstration
 
 #title
-This is my\:br [Headline]{.text-secondary}
+This is my :br [Headline]{.text-secondary}
 
 #description
-The best tools for creating and editing website content\:brcome from the powerful combination of Nuxt Studio and Nuxt Content.
+The best tools for creating and editing website content :br come from the powerful combination of Nuxt Studio and Nuxt Content.
 
 #links
   :::app-button{btn-style="secondary" to="/about"}
