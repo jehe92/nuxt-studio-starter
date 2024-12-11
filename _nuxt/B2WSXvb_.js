@@ -1,0 +1,1 @@
+import{r as t}from"./DCvOv1GU.js";import{m as s,f as o,g as r,h as c}from"./UFoBXEW7.js";import"./CxYJgpPD.js";const a={},n={class:"py-20"},m={class:"container mx-auto flex max-w-screen-lg items-center justify-center"};function i(e,f){return o(),r("section",n,[c("div",m,[t(e.$slots,"default",{unwrap:"p"})])])}const p=s(a,[["render",i]]);export{p as default};
